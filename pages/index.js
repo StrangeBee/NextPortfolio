@@ -16,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
+      <main className='bg-white px-10 md:px-20 lg:px-40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>Oduola Ebenezer</h1>
@@ -28,18 +28,18 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Oduola Ebenezer</h2>
-            <h3 className='text-2xl py-2'>Frontend Developer and Software Tester</h3>
-            <p className='text-md py-5 leading-8 text-gray-800'>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Oduola Ebenezer</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Frontend Developer and Software Tester</h3>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto'>
               A trained, qualified and motivated Frontend Developer and QA Tester, with solid grounding in HTML, CSS, JavaScript, Reactjs, Nextjs, Tailwind, Manual Testing and Automation Testing. A fast learner and also possesses good problem solving and troubleshooting skills.
             </p>
           </div>
-          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <a href=""><AiFillTwitterCircle /></a>
-            <a href=""><AiFillLinkedin /></a>
-            <a href=""><AiFillGithub /></a>
+          <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600 '>
+            <a href="https://www.twitter.com/oduolabenfico/" target='_blank'><AiFillTwitterCircle className='hover:text-gray-900' /></a>
+            <a href="https://www.linkedin.com/in/oduola-ebenezer/" target='_blank'><AiFillLinkedin className='hover:text-gray-900'/></a>
+            <a href="https://github.com/StrangeBee" target='_blank'><AiFillGithub className='hover:text-gray-900'/></a>
           </div>
-          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden'>
+          <div className='relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 mx-auto overflow-hidden md:h-96 md:w-96'>
             <Image src={Profile} layout="fill" objectFit='cover' />
           </div>
        </section>
@@ -50,8 +50,8 @@ export default function Home() {
             <p className='text-md py-2 leading-8 text-gray-80'>
             </p>
           </div>
-          <div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+          <div className='lg:flex gap-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
              <Image src={Design} width={100}  height={100} />
               <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
               <p className='py-2'></p>
@@ -60,27 +60,38 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Corel Draw</p>
               <p className='text-gray-800 py-1'>Figma</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
              <Image src={Code} width={100}  height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Responsive Web Designs</h3>
               <p className='py-2'></p>
-              <h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Corel Draw</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600'> FrameWorks and Tools I Use</h4>
+              <p className='text-gray-800 py-1'>Reactjs/ReactBootstrap</p>
+              <p className='text-gray-800 py-1'>Nextjs</p>
+              <p className='text-gray-800 py-1'>Git</p>
+              <p className='text-gray-800 py-1'>Tailwind Css</p>
+              <p className='text-gray-800 py-1'>Material UI</p>
+              <p className='text-gray-800 py-1'>Trello</p>
+              <p className='text-gray-800 py-1'>Vs Code</p>
             </div>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10'>
+              
+            <div className='text-center shadow-lg p-10 rounded-xl my-10 flex-1'>
              <Image src={Test} width={100}  height={100} />
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <h3 className='text-lg font-medium pt-8 pb-2'>Software QA Testing</h3>
               <p className='py-2'></p>
-              <h4 className='py-4 text-teal-600'>Design Tools I Use</h4>
-              <p className='text-gray-800 py-1'>Photoshop</p>
-              <p className='text-gray-800 py-1'>Corel Draw</p>
-              <p className='text-gray-800 py-1'>Figma</p>
+              <h4 className='py-4 text-teal-600'>Testing Skills and Tools</h4>
+              <p className='text-gray-800 py-1'>Manual Testing</p>
+              <p className='text-gray-800 py-1'>Automation Testing</p>
+              <p className='text-gray-800 py-1'>Load and Perfomance Testing</p>
+              <p className='text-gray-800 py-1'>Selenium</p>
+              <p className='text-gray-800 py-1'>Cypress</p>
             </div>
           </div>
        </section>
+
+       <hr />
       </main>
+
+      
 
       
     </div>
