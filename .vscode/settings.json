@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "\"*.css\":": "\"tailwindcss\""
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "diffEditor.wordWrap": "on",
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true
+}
